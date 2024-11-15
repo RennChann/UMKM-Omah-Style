@@ -1,0 +1,288 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo {         
+  width: 200px;
+  height: auto;
+  margin-left: 20px;
+}
+
+header {
+  background-color: #FFB38E;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 50px;
+  width: auto;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 400px;
+}
+ nav h1 {
+    margin-right: 70px;
+    font-family: Georgia, Times, serif;
+    color: #000;
+ }
+
+nav ul li {
+  width: auto;
+  height: auto;
+  background-color: #e7611f;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.btn-order {
+  background-color: #e74c3c;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #ed9c62;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.btn-primary {
+    background-color: #ed2719;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#products h2 {
+    font-family: 'Gill Sans';
+    padding: 40px 0 0 40px;
+    background-color: #FF9C73;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #FF9C73;
+}
+
+.product {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+    background-color: #f1c2ae;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product:hover {
+    transform: scale(0.7);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#testimonials {
+    font-family: 'Gill Sans';
+    background-color: #ed9c62;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonial {
+    margin: 100px;
+    max-width: 300px;
+}
+
+.testimonials img {
+    width: 100px;
+    height: auto;
+    border-radius: 1000px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #B6A28E;
+}
+
+#contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-left: 40px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #e7611f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .btn-order {
+        margin-top: 10px;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+    #products h2 {
+        text-align: center;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        margin: auto;
+    }
+    form input,
+    form textarea {
+        width: 90%;
+    }
+}
+
+.cari {
+    display: flex;
+}
+
+.cari img {
+    width: 100%;
+    height: auto;
+    max-width: 40px;
+}
+
+.button-cari {
+    width: 100px;
+    height: auto;
+}
+
+.cari input {
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.cart {
+    display: flex;
+}
+
+.cart img {
+    background-color: #e7611f;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 70px;
+}
